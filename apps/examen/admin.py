@@ -4,3 +4,6 @@ from .models import Examen
 @admin.register(Examen)
 class adminExamen(admin.ModelAdmin):
     list_display = ["titulo", "fecha", "asignatura", "profesor"]
+    search_fields = ["profesor",]
+    list_filter = ["profesor"]
+
