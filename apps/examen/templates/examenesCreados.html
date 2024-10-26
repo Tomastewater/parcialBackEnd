@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Lista Examenes</h1>
+
+{%for examen in examen%}  
+<p>
+{{examen.profesor}}{{examen.titulo}}
+</p>
+{% endfor %}
+</body>
+</html>

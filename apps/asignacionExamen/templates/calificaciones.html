@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Lista de Calificaciones</h1>
+
+{%for asignacionExamen in asignacionExamen%}  
+<p>
+{{asignacionExamen.calificacion}}{{asignacionExamen.alumno}}{{asignacionExamen.titulo}}{{asignacionExamen.examen}}
+</p>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Lista de Ausentes</h1>
+
+{%for asignacionExamen in asignacionExamen%}  
+<p>
+{{asignacionExamen.alumno.nombre}}{{asignacionExamen.examen.titulo}}{{asignacionExamen.examen.asignatura.nombre}}
+</p>
+{% endfor %}
+</body>
+</html>
